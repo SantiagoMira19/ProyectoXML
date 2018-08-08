@@ -69,6 +69,13 @@ public class FXMLDocumentController implements Initializable {
         JOptionPane.showMessageDialog(null, "Se agregó un empleado");
     }
     
+    @FXML
+    private void crearArchivoXML (ActionEvent event){
+        Empleado objE= new Empleado();
+        boolean guardado=objE.crearFileXML(listaEmpleados);
+    }
+    
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

@@ -41,7 +41,7 @@
       <TextField fx:id="tbEdad" layoutX="153.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" />
       <TextField fx:id="tbCodigo" layoutX="153.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
       <TextField fx:id="tbDepto" layoutX="153.0" layoutY="218.0" prefHeight="25.0" prefWidth="149.0" />
-      <Button layoutX="236.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="132.0" text="Guardar Archivo XML" />
+      <Button layoutX="236.0" layoutY="295.0" mnemonicParsing="false" onAction="#crearArchivoXML" prefHeight="37.0" prefWidth="132.0" text="Guardar Archivo XML" />
       <Label fx:id="lbTitulo" layoutX="109.0" layoutY="14.0" text="AGREGAR EMPLEADOS">
          <font>
             <Font size="18.0" />
