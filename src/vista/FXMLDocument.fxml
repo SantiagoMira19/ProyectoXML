@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="creacionarchivosxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="401.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="creacionarchivosxml.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Button fx:id="addEmpleado" layoutX="36.0" layoutY="295.0" onAction="#agregarEmpleadoLista" prefHeight="37.0" prefWidth="132.0" text="Agregar a la Lista" />
+        <Label fx:id="label" layoutX="318.0" layoutY="354.0" minHeight="16" minWidth="69" />
+      <Label fx:id="lbNombre" layoutX="63.0" layoutY="73.0" text="Nombre:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDireccion" layoutX="58.0" layoutY="108.0" text="Dirección:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEdad" layoutX="90.0" layoutY="144.0" text="Edad:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbCodigo" layoutX="73.0" layoutY="179.0" text="Código:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDpto" layoutX="18.0" layoutY="217.0" text="Departamento:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tbNombre" layoutX="153.0" layoutY="74.0" />
+      <TextField fx:id="tbDireccion" layoutX="153.0" layoutY="109.0" />
+      <TextField fx:id="tbEdad" layoutX="153.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="tbCodigo" layoutX="153.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="tbDepto" layoutX="153.0" layoutY="218.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="236.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="132.0" text="Guardar Archivo XML" />
+      <Label fx:id="lbTitulo" layoutX="109.0" layoutY="14.0" text="AGREGAR EMPLEADOS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
